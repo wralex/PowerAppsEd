@@ -1,7 +1,8 @@
 In this lab you will use Power BI Report Builder to develop a pixel-perfect paginated report layout. You will create a data source and dataset, and also configure a report parameter. The report layout will allow data to be rendered over multiple pages, and to be exported in PDF and other formats.
 
 The final report will look like the following:
-![Image of the completed Sales Order Report. It includes a title, subtitle details, the company logo, and a table of sales order lines.](https://cma365.sharepoint.com/teams/DynamicsSolutions/Shared%20Documents/Power%20BI/DA100/Resources/PBI%20Pagenated%20Report%20Final.png)
+
+![Image of the completed Sales Order Report. It includes a title, subtitle details, the company logo, and a table of sales order lines.](/Resources/PBI%20Pagenated%20Report%20Final.png)
 
 In this lab you learn how to:
 - Use Power BI Report Builder
@@ -37,29 +38,35 @@ In this task you will need to download Power BI Desktop and Report Builder appli
 
 6. Download a local copy of the Power BI PBIX file from the following URL
 
-    [AdventureWorksDW2020.pbix](https://cma365.sharepoint.com/teams/DynamicsSolutions/Shared%20Documents/Power%20BI/PBIX%20Files/AdventureWorksDW2020.pbix)
+    [AdventureWorksDW2020.pbix](https://github.com/wralex/PowerAppsEd/raw/76bd817ead5019d5cc72764e339ce198beb23316/PowerBI/Resources/AdventureWorksDW2020.pbix)
 
 8. With **Power BI Desktop** open the downloaded file from above step (*make sure the account is logged in with your tenant account*)
 
 9. Publish the report `AdventureWorksDW2020` to your personal workspace called **My workspace** using the button icon on top right of the **Power BI Desktop** application
-    ![Publish To My workspace](https://cma365.sharepoint.com/teams/DynamicsSolutions/Shared%20Documents/Power%20BI/DA100/Resources/PowerBI_Publish.png)
-    ![Open 'AdventureWorksDW2020.pbix' in Power BI](https://cma365.sharepoint.com/teams/DynamicsSolutions/Shared%20Documents/Power%20BI/DA100/Resources/PowerBI_PublishToMyWorkspace.png)
+
+	![Publish To My workspace](https://github.com/wralex/PowerAppsEd/raw/76bd817ead5019d5cc72764e339ce198beb23316/PowerBI/Resources/PowerBI_Publish.png)
+
+	![Open 'AdventureWorksDW2020.pbix' in Power BI](https://github.com/wralex/PowerAppsEd/raw/76bd817ead5019d5cc72764e339ce198beb23316/PowerBI/Resources/PowerBI_PublishToMyWorkspace.png)
 
 10. Click on the link after you publish the report to confirm that the report has been placed out to your online **My workspace**
-    ![Open 'AdventureWorksDW2020.pbix' in Power BI](https://cma365.sharepoint.com/teams/DynamicsSolutions/Shared%20Documents/Power%20BI/DA100/Resources/PowerBI_ClickLinkToMyWorkspace.png)
+
+	![Open 'AdventureWorksDW2020.pbix' in Power BI](https://github.com/wralex/PowerAppsEd/raw/76bd817ead5019d5cc72764e339ce198beb23316/PowerBI/Resources/PowerBI_ClickLinkToMyWorkspace.png)
 
 11. After confimation that the report (*along with it's associated Dataset*) have been confirmed online then close Power BI Desktop (*you can also close the browser window if no longer needed*) and proceed with the next tasks
 
 ### **Task 2: Create the report**
 In this task you will open Power BI Report Builder to create and then save a report.
 1. Open the **Power BI Report Builder** application.
-    ![Power BI Report Builder](https://cma365.sharepoint.com/teams/DynamicsSolutions/Shared%20Documents/Power%20BI/DA100/Resources/Power%20BI%20Report%20Builder%20-%20Icon.png)
+
+	![Power BI Report Builder](https://github.com/wralex/PowerAppsEd/raw/76bd817ead5019d5cc72764e339ce198beb23316/PowerBI/Resources/Power%20BI%20Report%20Builder%20-%20Icon.png)
 
 2. In the Power BI Report Builder window, to create a new report, in the **Getting Started** window, click **Blank Report**.
- 	![Picture 5](https://raw.githubusercontent.com/MicrosoftLearning/DA-100-Analyzing-Data-with-Power-BI/master/Instructions/Labs/Linked_image_Files/11-create-power-bi-paginated-report_image3.png)
+
+	![Picture 5](https://raw.githubusercontent.com/MicrosoftLearning/DA-100-Analyzing-Data-with-Power-BI/master/Instructions/Labs/Linked_image_Files/11-create-power-bi-paginated-report_image3.png)
 
 3. To save the report, click the **File** tab (located at the top-left), and then select **Save**.
- 	![PNG Image](https://raw.githubusercontent.com/MicrosoftLearning/DA-100-Analyzing-Data-with-Power-BI/master/Instructions/Labs/Linked_image_Files/11-create-power-bi-paginated-report_image4.png)
+
+	![PNG Image](https://raw.githubusercontent.com/MicrosoftLearning/DA-100-Analyzing-Data-with-Power-BI/master/Instructions/Labs/Linked_image_Files/11-create-power-bi-paginated-report_image4.png)
 
 4. In the **Save As Report** window, navigate to the **Documents** folder.
 
@@ -71,13 +78,17 @@ In this task you will open Power BI Report Builder to create and then save a rep
 In this exercise you will design the report layout, and explore the final report design.
 ### **Task 1: Configure the report header**
 In this task you will configure the report header.
+
 1. In the report designer, notice the default report layout, which consists of a body region and a report footer region.
+
 	![PNG Image 2](https://raw.githubusercontent.com/MicrosoftLearning/DA-100-Analyzing-Data-with-Power-BI/master/Instructions/Labs/Linked_image_Files/11-create-power-bi-paginated-report_image5.png)
+
 	*The body contains a single textbox ready for a report title, and the report footer contains a single textbox describing the report execution time.*
 
 	*The default design will render the report title once, in the body, on the first rendered page. However, you will now modify the report design by adding a report header region, and by moving the report title textbox into this region. This way, the report title will repeat on every page. You will also add an image of the company logo.*
 
 2. To add a report header region, on the **Insert** ribbon tab, from inside the **Header &amp; Footer** group, click **Header**, and then select **Add Header**.
+
 	![C:\Users\PETERM~1\AppData\Local\Temp\SNAGHTML33038ea4.PNG](https://raw.githubusercontent.com/MicrosoftLearning/DA-100-Analyzing-Data-with-Power-BI/master/Instructions/Labs/Linked_image_Files/11-create-power-bi-paginated-report_image6.png)
 
 3. In the report designer, notice that a report header region has been added to the report layout.
@@ -85,35 +96,45 @@ In this task you will configure the report header.
 4. To select the body textbox, click the “Click to add title” textbox.
 
 5. To move the textbox, click the four-headed arrow icon, and then drag it into the header region to then drop it at the very top-left of the report header region.
+
 	![C:\Users\PETERM~1\AppData\Local\Temp\SNAGHTML330925bc.PNG](https://raw.githubusercontent.com/MicrosoftLearning/DA-100-Analyzing-Data-with-Power-BI/master/Instructions/Labs/Linked_image_Files/11-create-power-bi-paginated-report_image7.png)
 
 6. To modify the report title textbox text, click inside the text box, and then enter: **Sales Order Report**
+
 	*To resize the textbox, you will first open the **Properties** pane. For fine-grained control of location and size properties, you will need use the **Properties** pane.*
 
 7. On the **View** ribbon tab, from inside the **Show/Hide** group, check **Properties**.
+
 	![Picture 27](https://raw.githubusercontent.com/MicrosoftLearning/DA-100-Analyzing-Data-with-Power-BI/master/Instructions/Labs/Linked_image_Files/11-create-power-bi-paginated-report_image8.png)
 
 8. To select the report title textbox, first click an area outside the textbox, and then click the textbox again.
+
 	*The textbox is selected when you see the border of the textbox highlighted and resizing handles (small circles) appear on the border.*
 
 9. In the **Properties** pane (located at the right), scroll down the list to locate the **Position** group.
+
 	![Picture 28](https://raw.githubusercontent.com/MicrosoftLearning/DA-100-Analyzing-Data-with-Power-BI/master/Instructions/Labs/Linked_image_Files/11-create-power-bi-paginated-report_image9.png)
+
 	*The **Position** group allows setting exact values for the location and size of report items.*
 
 	*It’s important that you enter the values as directed in this lab. Pixel-perfect layout is required to achieve the page rendering at the end of the lab.*
 
 10. Within the **Position** group, expand the **Location** group, and ensure that the **Left** and **Top** properties are each set to **0in**.
+
 	*The location and size units are in inches because the regional settings of the lab virtual machine is set to the United States. If your region uses metric measurements, centimeters would be the default unit.*
 
 11. Within the **Position** group, expand the **Size** group, and then set the **Width** property to **4**.
+
 	![Picture 35](https://raw.githubusercontent.com/MicrosoftLearning/DA-100-Analyzing-Data-with-Power-BI/master/Instructions/Labs/Linked_image_Files/11-create-power-bi-paginated-report_image10.png)
 
 12. To insert an image, on the **Insert** ribbon tab, from inside the **Report Items** group, click **Image**.
+
 	![Picture 31](https://raw.githubusercontent.com/MicrosoftLearning/DA-100-Analyzing-Data-with-Power-BI/master/Instructions/Labs/Linked_image_Files/11-create-power-bi-paginated-report_image11.png)
 
 13. To add the image to the report design, click inside the report header region, to the right of the report title textbox.
 
 14. In the **Image Properties** window, to import from an image file, click **Import**.
+
 	![Picture 33](https://raw.githubusercontent.com/MicrosoftLearning/DA-100-Analyzing-Data-with-Power-BI/master/Instructions/Labs/Linked_image_Files/11-create-power-bi-paginated-report_image12.png)
 
 15. In the **Open** window, navigate to the **C:\DA100\Resources** folder, and then select the **AdventureWorksLogo.jpg** file.
@@ -125,6 +146,7 @@ In this task you will configure the report header.
 18. In the report designer, notice that the image was added, and is selected.
 
 19. To position and resize the image, in the **Properties** pane, configure the following properties:
+
 	- **Position | Location | Left** : 5
 	- **Position | Location | Top** : 0
 	- **Position | Size | Width** : 1
@@ -135,10 +157,13 @@ In this task you will configure the report header.
 21. In the **Properties** pane, set the **General | Height** property to **1**.
 
 22. Verify that the report header region contains a single textbox and image, and looks like the following:
+
 	![Picture 34](https://raw.githubusercontent.com/MicrosoftLearning/DA-100-Analyzing-Data-with-Power-BI/master/Instructions/Labs/Linked_image_Files/11-create-power-bi-paginated-report_image13.png)
 
 23. To save the report, on the **File** tab, click **Save**.
+
 	*Tip: You can also click the disk icon located at the top-left.*
+
 	![Picture 106](https://raw.githubusercontent.com/MicrosoftLearning/DA-100-Analyzing-Data-with-Power-BI/master/Instructions/Labs/Linked_image_Files/11-create-power-bi-paginated-report_image14.png)
 	*You are now ready to configure the report to retrieve a database query result.*
 
@@ -147,23 +172,29 @@ In this task you will create a data source and dataset to retrieve a query resul
 1. Open both **Power BI Report Builder**
 
 2. Verify that you are currently signed into your organization's environment by viewing the top right area of the application and see your display name below the Minimize, Maximize, & Close icons. If not sign in then click the **Sign In** message and go through the authenication to connect to the environment.
-    ![Signed In](https://cma365.sharepoint.com/teams/DynamicsSolutions/Shared%20Documents/Power%20BI/DA100/Resources/Power%20BI%20Report%20Builder%20-%20Logged%20In.png)
+
+	![Signed In](https://github.com/wralex/PowerAppsEd/raw/76bd817ead5019d5cc72764e339ce198beb23316/PowerBI/Resources/Power%20BI%20Report%20Builder%20-%20Logged%20In.png)
 
 3. In the **Report Data** pane (located at the left), right-click the **Data Sources** folder, and then select **Add Power BI Dataset Connection...**.
-    ![C:\Users\PETERM~1\AppData\Local\Temp\SNAGHTML3367f3d0.PNG](https://cma365.sharepoint.com/teams/DynamicsSolutions/Shared%20Documents/Power%20BI/DA100/Resources/Add%20Power%20BI%20Dataset%20Connection....png)
+
+	![C:\Users\PETERM~1\AppData\Local\Temp\SNAGHTML3367f3d0.PNG](https://github.com/wralex/PowerAppsEd/raw/76bd817ead5019d5cc72764e339ce198beb23316/PowerBI/Resources/Add%20Power%20BI%20Dataset%20Connection....png)
 	*It is possible to retrieve data from cloud or on-premises databases, or a Power BI dataset.*
 
 4. On the "Select a dataset from the Power BI Service" make sure you have selected **My Workspace** on the left panel and **AdventureWorksDW2020** Dataset on the right panel and keep the Dataset name as  `AdventureWorksDW2020` and click the **Select** button on the bottom.
-    ![Select Dataset](https://cma365.sharepoint.com/teams/DynamicsSolutions/Shared%20Documents/Power%20BI/DA100/Resources/PowerBI%20-%20Selecting%20AdventureWorksDW2020%20Dataset.png)
+
+	![Select Dataset](https://github.com/wralex/PowerAppsEd/raw/76bd817ead5019d5cc72764e339ce198beb23316/PowerBI/Resources/PowerBI%20-%20Selecting%20AdventureWorksDW2020%20Dataset.png)
 
 5. Right-Click the new Data Source (*most likely named **MyWorkspace_AdventureWorksDW2020***) and Left-Click the  **Rename** selection
-    ![Rename Dataset](https://cma365.sharepoint.com/teams/DynamicsSolutions/Shared%20Documents/Power%20BI/DA100/Resources/Power%20BI%20-%20Rename%20Dataset.png)
+
+	![Rename Dataset](https://github.com/wralex/PowerAppsEd/raw/76bd817ead5019d5cc72764e339ce198beb23316/PowerBI/Resources/Power%20BI%20-%20Rename%20Dataset.png)
 
 6. Change the **Name** box with the text with `AdventureWorksDW2020`
-    ![New Name](https://cma365.sharepoint.com/teams/DynamicsSolutions/Shared%20Documents/Power%20BI/DA100/Resources/Power%20BI%20Report%20Builder%20-%20AdventureWorksDW2020%20Dataset.png)
+
+	![New Name](https://github.com/wralex/PowerAppsEd/raw/76bd817ead5019d5cc72764e339ce198beb23316/PowerBI/Resources/Power%20BI%20Report%20Builder%20-%20AdventureWorksDW2020%20Dataset.png)
 
 7. Right click on the **Parameters** folder icon and click **Add Parameter...**
-    ![Add Parameter](https://cma365.sharepoint.com/teams/DynamicsSolutions/Shared%20Documents/Power%20BI/DA100/Resources/PBI%20Add%20Parameter.png)
+
+	![Add Parameter](https://github.com/wralex/PowerAppsEd/raw/76bd817ead5019d5cc72764e339ce198beb23316/PowerBI/Resources/PBI%20Add%20Parameter.png)
 
 8. Enter the following on the **General** Page of the new parameter:
 
@@ -175,11 +206,13 @@ In this task you will create a data source and dataset to retrieve a query resul
 9. Click the **OK** button.
 
 10. To create a dataset, in the **Report Data** pane, right-click the **AdventureWorksDW2020** data source, and then select **Add Dataset**.
+
 	![C:\Users\PETERM~1\AppData\Local\Temp\SNAGHTML336e389c.PNG](https://raw.githubusercontent.com/MicrosoftLearning/DA-100-Analyzing-Data-with-Power-BI/master/Instructions/Labs/Linked_image_Files/11-create-power-bi-paginated-report_image18.png)
 	*A report dataset is a different in purpose and structure from a Power BI dataset.*
 
 11. Click on the **Parameters** view on the left and click the **Add** button to add a parameter to use in the query.
-    ![Add Param to Dataset](https://cma365.sharepoint.com/teams/DynamicsSolutions/Shared%20Documents/Power%20BI/DA100/Resources/PBI%20Add%20Param%20to%20Dataset.png)
+
+	![Add Param to Dataset](https://github.com/wralex/PowerAppsEd/raw/76bd817ead5019d5cc72764e339ce198beb23316/PowerBI/Resources/PBI%20Add%20Param%20to%20Dataset.png)
 
 12. In the **Parameter** Name field enter **`SalesOrderNumber`** and in the Parameter Value drop-down select the `[@SalesOrderNumber]` that was created above
 
@@ -188,6 +221,7 @@ In this task you will create a data source and dataset to retrieve a query resul
 14. In the **Dataset Properties** window, in the **Name** box, replace the text with **`SalesOrder`**.
 
 15. To import a pre-defined query, click **Import**.
+
 	![Picture 40](https://raw.githubusercontent.com/MicrosoftLearning/DA-100-Analyzing-Data-with-Power-BI/master/Instructions/Labs/Linked_image_Files/11-create-power-bi-paginated-report_image19.png)
 
 16. In the **Import Query** window, change the type of file from **Sql Files (\*.sql)** to **All files (\*.\*)** and then to navigate to the **C:\DA100\Labs\10-create-power-bi-paginated-report\Assets** folder, and then select the **SalesOrder.dax** file.
@@ -195,10 +229,12 @@ In this task you will create a data source and dataset to retrieve a query resul
 17. Click **Open**.
 
 18. In the **Query** box, review the query, and be sure to scroll down to the bottom of the query text.
+
 	*It is not important that you understand the details of the query statement. It has been designed to retrieve sales order line details. The `VAR __DS0FilterTable = TREATAS({@SalesOrderNumber}, 'FactResellerSales'[SalesOrderNumber])` clause includes a predicate to restrict the query result to a single sales order. The ORDER BY clause ensures the rows are returned by line number order.*
 
 19. Notice the use of **@SalesOrderNumber** paramter in the `VAR __DS0FilterTable` clause, which represents a query parameter.
-	![Picture 3](https://cma365.sharepoint.com/teams/DynamicsSolutions/Shared%20Documents/Power%20BI/DA100/Resources/PBI%20SalesOrder%20Param.png)
+
+	![Picture 3](https://github.com/wralex/PowerAppsEd/raw/76bd817ead5019d5cc72764e339ce198beb23316/PowerBI/Resources/PBI%20SalesOrder%20Param.png)
 	*A query parameter is a placeholder for a value that will be passed in at query execution time. You will configure a report parameter to prompt the report user for a single sales order number which will then be passed to the query parameter.*
 
 20. Click on the **Fields** view on the left and change each field to a simple name as follows:
@@ -212,10 +248,10 @@ In this task you will create a data source and dataset to retrieve a query resul
 	- **UnitPrice**->FactResellerSales[UnitPrice]
 	- **Amount**->[Amount]
 
-
 21. Click **OK**.
 
 22. In the **Report Data** pane, notice the addition of the **SalesOrder** dataset and its fields.
+
 	![Picture 44](https://raw.githubusercontent.com/MicrosoftLearning/DA-100-Analyzing-Data-with-Power-BI/master/Instructions/Labs/Linked_image_Files/11-create-power-bi-paginated-report_image21.png)
 	*Fields are used to configure data regions in the report layout. They were derived from the dataset query columns.*
 
@@ -226,19 +262,22 @@ In this task you will create a data source and dataset to retrieve a query resul
 In this task you will configure the report parameter with a default value.
 
 1. To edit the report parameter, right-click the **SalesOrderNumber** report parameter, and then select **Parameter Properties**.
+
 	![Picture 46](https://raw.githubusercontent.com/MicrosoftLearning/DA-100-Analyzing-Data-with-Power-BI/master/Instructions/Labs/Linked_image_Files/11-create-power-bi-paginated-report_image23.png)
 
 2. In the **Report Parameter Properties** window, at the left, select the **Default Values** pages.
+
 	![Picture 48](https://raw.githubusercontent.com/MicrosoftLearning/DA-100-Analyzing-Data-with-Power-BI/master/Instructions/Labs/Linked_image_Files/11-create-power-bi-paginated-report_image24.png)
 
 3. Select the **Specify Values** option.
+
 	![Picture 49](https://raw.githubusercontent.com/MicrosoftLearning/DA-100-Analyzing-Data-with-Power-BI/master/Instructions/Labs/Linked_image_Files/11-create-power-bi-paginated-report_image25.png)
 
 4. To add a default value, click **Add**.
 
 5. In the **Value** dropdown list, replace the text with **SO43665**.
-	![Picture 50](https://cma365.sharepoint.com/teams/DynamicsSolutions/Shared%20Documents/Power%20BI/DA100/Resources/PBI%20Default%20Param%20Value.png)
 
+	![Picture 50](https://github.com/wralex/PowerAppsEd/raw/76bd817ead5019d5cc72764e339ce198beb23316/PowerBI/Resources/PBI%20Default%20Param%20Value.png)
 	*Sales order SO43665 is the value you will initially use to test the report design.*
 
 6. Click **OK**.
@@ -288,11 +327,8 @@ In this task you will finalize the report header region design by adding textbox
 12. In the **Properties** pane, configure the following position properties:
 
 	- **Position | Location | Left** : 0
-
 	- **Position | Location | Top** : 0.5
-
 	- **Position | Size | Width** : 4
-
 	- **Position | Size | Height** : 0.25
 
 13. To format part of the textbox text, inside the new textbox, select only the **Sales Order:** text.
@@ -318,11 +354,8 @@ In this task you will finalize the report header region design by adding textbox
 19. In the **Properties** pane, configure the following position properties:
 
 	- **Position | Location | Left** : 0
-
 	- **Position | Location | Top** : 0.75
-
 	- **Position | Size | Width** : 4
-
 	- **Position | Size | Height** : 0.25
 
 20. Format the **Reseller:** text in bold.
@@ -348,11 +381,8 @@ In this task you will finalize the report header region design by adding textbox
 27. In the **Properties** pane, configure the following position properties:
 
 	- **Position | Location | Left** : 0
-
 	- **Position | Location | Top** : 1
-
 	- **Position | Size | Width** : 4
-
 	- **Position | Size | Height** : 0.25
 
 28. Format the **Order Date:** text in bold.
@@ -375,7 +405,7 @@ In this task you will finalize the report header region design by adding textbox
 
 34. Verify that the rendered report looks like the following:
 
-	![Picture 4](https://cma365.sharepoint.com/teams/DynamicsSolutions/Shared%20Documents/Power%20BI/DA100/Resources/PBI%20Sample%20Run%2001.png)
+	![Picture 4](https://github.com/wralex/PowerAppsEd/raw/76bd817ead5019d5cc72764e339ce198beb23316/PowerBI/Resources/PBI%20Sample%20Run%2001.png)
 
 35. To return to design view, on the **Run** ribbon tab, from inside the **Views** group, click **Design**.
 
@@ -396,7 +426,6 @@ In this task you will add a table data region to the report body.
 3. In the **Properties** pane, configure the following position properties:
 
 	- **Position | Location | Left** : 0
-
 	- **Position | Location | Top** : 0
 
 	*The table will display five columns. By default, the table template includes only three columns.*
@@ -422,11 +451,8 @@ In this task you will add a table data region to the report body.
 9. Add fields to the next four columns, in order, as follows:
 
 	- Product
-
 	- Quantity
-
 	- UnitPrice
-
 	- Amount
 
 10. Verify that the table design looks like the following:
@@ -439,7 +465,7 @@ In this task you will add a table data region to the report body.
 
 	![Picture 12](https://raw.githubusercontent.com/MicrosoftLearning/DA-100-Analyzing-Data-with-Power-BI/master/Instructions/Labs/Linked_image_Files/11-create-power-bi-paginated-report_image48.png)
 
-	![Picture 11](https://cma365.sharepoint.com/teams/DynamicsSolutions/Shared%20Documents/Power%20BI/DA100/Resources/PBI%20Report%20Sample%20with%20Table.png)
+	![Picture 11](https://github.com/wralex/PowerAppsEd/raw/76bd817ead5019d5cc72764e339ce198beb23316/PowerBI/Resources/PBI%20Report%20Sample%20with%20Table.png)
 
 	*The table includes a header and 10 sales order line rows. There are many improvements that can be made by formatting the table layout.*
 
@@ -529,7 +555,7 @@ In this task you will format the table data region.
 
 21. Verify that the rendered report looks like the following:
 
-	![Picture 6](https://cma365.sharepoint.com/teams/DynamicsSolutions/Shared%20Documents/Power%20BI/DA100/Resources/PBI%20Sales%20Order%20Detail%20with%20Table%20Format.png)
+	![Picture 6](https://github.com/wralex/PowerAppsEd/raw/76bd817ead5019d5cc72764e339ce198beb23316/PowerBI/Resources/PBI%20Sales%20Order%20Detail%20with%20Table%20Format.png)
 
 22. In the **Sales Order Number** parameter box, replace the value with **SO43692**.
 
