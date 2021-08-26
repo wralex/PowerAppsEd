@@ -40,7 +40,7 @@ In this task you will need to download Power BI Desktop and Report Builder appli
 
 6. Download a local copy of the Power BI PBIX file from the following URL
 
-    [AdventureWorksDW2020.pbix](https://github.com/wralex/PowerAppsEd/raw/76bd817ead5019d5cc72764e339ce198beb23316/PowerBI/Resources/AdventureWorksDW2020.pbix)
+    [AdventureWorksDW2020.pbix](https://github.com/wralex/PowerAppsEd/raw/main/PowerBI/Resources/AdventureWorksDW2020.pbix)
 
 8. With **Power BI Desktop** open the downloaded file from above step (*make sure the account is logged in with your tenant account*)
 
