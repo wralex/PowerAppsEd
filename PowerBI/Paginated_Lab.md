@@ -245,14 +245,16 @@ In this task you will create a data source and dataset to retrieve a query resul
 
 20. Click on the **Fields** view on the left and change each field to a simple name as follows:
 
-	- **OrderDate**->FactResellerSales[OrderDate]
-	- **ResellerID**->DimReseller[ResellerAlternateKey]
-	- **Reseller**->DimReseller[ResellerName]
-	- **Line**->FactResellerSales[SalesOrderLineNumber]
-	- **Product**->DimProduct[EnglishProductName]
-	- **Quantity**->FactResellerSales[OrderQuantity]
-	- **UnitPrice**->FactResellerSales[UnitPrice]
-	- **Amount**->[Amount]
+	| **Field Name** | **Field Source**                            |
+	|------------|-----------------------------------------|
+	| `OrderDate`  | FactResellerSales[OrderDate]            |
+	| `ResellerID` | DimReseller[ResellerAlternateKey]       |
+	| `Reseller`   | DimReseller[ResellerName]               |
+	| `Line`       | FactResellerSales[SalesOrderLineNumber] |
+	| `Product`    | DimProduct[EnglishProductName]          |
+	| `Quantity`   | FactResellerSales[OrderQuantity]        |
+	| `UnitPrice`  | FactResellerSales[UnitPrice]            |
+	| `Amount`     | [Amount]                                |
 
 21. Click **OK**.
 
