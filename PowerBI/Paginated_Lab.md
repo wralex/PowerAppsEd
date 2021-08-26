@@ -170,7 +170,7 @@ In this task you will configure the report header.
 
 ### **Task 2: Retrieve data**
 In this task you will create a data source and dataset to retrieve a query result from the **AdventureWorksDW2020** Dataset.
-1. Open both **Power BI Report Builder**
+1. Open **Power BI Report Builder**
 
 2. Verify that you are currently signed into your organization's environment by viewing the top right area of the application and see your display name below the Minimize, Maximize, & Close icons. If not sign in then click the **Sign In** message and go through the authenication to connect to the environment.
 
