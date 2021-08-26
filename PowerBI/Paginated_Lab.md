@@ -204,7 +204,7 @@ In this task you will create a data source and dataset to retrieve a query resul
 
 9. Click the **OK** button.
 
-10. Download the DAX file linked below to be used for the next steps. **Make note of where you place this file on your workstation**
+10. **Right**-click on the link below and select the **Save link as** option to place the DAX file onto your workstation to be used for the next steps. **Make note of where you place this file on your workstation**
 
 	[SalesOrder.dax](https://github.com/wralex/PowerAppsEd/raw/76bd817ead5019d5cc72764e339ce198beb23316/PowerBI/Resources/SalesOrder.dax)
 
