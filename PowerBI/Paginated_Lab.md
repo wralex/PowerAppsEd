@@ -247,14 +247,14 @@ In this task you will create a data source and dataset to retrieve a query resul
 
 	| **Field Name** | **Field Source**                            |
 	|------------|-----------------------------------------|
-	| `OrderDate`  | FactResellerSales[OrderDate]            |
-	| `ResellerID` | DimReseller[ResellerAlternateKey]       |
-	| `Reseller`   | DimReseller[ResellerName]               |
-	| `Line`       | FactResellerSales[SalesOrderLineNumber] |
-	| `Product`    | DimProduct[EnglishProductName]          |
-	| `Quantity`   | FactResellerSales[OrderQuantity]        |
-	| `UnitPrice`  | FactResellerSales[UnitPrice]            |
-	| `Amount`     | [Amount]                                |
+	| **`OrderDate`**  | FactResellerSales[OrderDate]            |
+	| **`ResellerID`** | DimReseller[ResellerAlternateKey]       |
+	| **`Reseller`**   | DimReseller[ResellerName]               |
+	| **`Line`**       | FactResellerSales[SalesOrderLineNumber] |
+	| **`Product`**    | DimProduct[EnglishProductName]          |
+	| **`Quantity`**   | FactResellerSales[OrderQuantity]        |
+	| **`UnitPrice`**  | FactResellerSales[UnitPrice]            |
+	| **`Amount`**     | [Amount]                                |
 
 21. Click **OK**.
 
