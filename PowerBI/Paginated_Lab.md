@@ -122,18 +122,22 @@ In this task you will configure the report header.
 11. Within the **Position** group, expand the **Size** group, and then set the **Width** property to **4**.
 
 	![Picture 35](https://raw.githubusercontent.com/MicrosoftLearning/DA-100-Analyzing-Data-with-Power-BI/master/Instructions/Labs/Linked_image_Files/11-create-power-bi-paginated-report_image10.png)
+	
+12. Download the following linked image file for the next steps (***Note where you place the downloaded image***):
 
-12. To insert an image, on the **Insert** ribbon tab, from inside the **Report Items** group, click **Image**.
+	[Adventure Works Image](https://github.com/wralex/PowerAppsEd/raw/main/PowerBI/Resources/AdventureWorksLogo.jpg)
+
+13. To insert an image, on the **Insert** ribbon tab, from inside the **Report Items** group, click **Image**.
 
 	![Picture 31](https://raw.githubusercontent.com/MicrosoftLearning/DA-100-Analyzing-Data-with-Power-BI/master/Instructions/Labs/Linked_image_Files/11-create-power-bi-paginated-report_image11.png)
 
-13. To add the image to the report design, click inside the report header region, to the right of the report title textbox.
+14. To add the image to the report design, click inside the report header region, to the right of the report title textbox.
 
-14. In the **Image Properties** window, to import from an image file, click **Import**.
+15. In the **Image Properties** window, to import from an image file, click **Import**.
 
 	![Picture 33](https://raw.githubusercontent.com/MicrosoftLearning/DA-100-Analyzing-Data-with-Power-BI/master/Instructions/Labs/Linked_image_Files/11-create-power-bi-paginated-report_image12.png)
 
-15. In the **Open** window, navigate to the **C:\DA100\Resources** folder, and then select the **AdventureWorksLogo.jpg** file.
+16. In the **Open** window, navigate to the download folder from the step above that linked to the image, and then select the `AdventureWorksLogo.jpg` file.
 
 16. Click **Open**.
 
