@@ -32,23 +32,23 @@ In this task you will need to download Power BI Desktop and Report Builder appli
 
 3. Open each application and sign in using your organization's tenant login (*i.e., jsmith@cma.com*).
 
-6. Download a local copy of the Power BI PBIX file from the following URL
+4. Download a local copy of the Power BI PBIX file from the following URL
 
     [AdventureWorksDW2020.pbix](https://github.com/wralex/PowerAppsEd/raw/main/PowerBI/Resources/AdventureWorksDW2020.pbix)
 
-8. With **Power BI Desktop** open the downloaded file from above step (*make sure the account is logged in with your tenant account*)
+5. With **Power BI Desktop** open the downloaded file from above step (*make sure the account is logged in with your tenant account*)
 
-9. Publish the report `AdventureWorksDW2020` to your personal workspace called **My workspace** using the button icon on top right of the **Power BI Desktop** application
+6. Publish the report `AdventureWorksDW2020` to your personal workspace called **My workspace** using the button icon on top right of the **Power BI Desktop** application
 
 	![Publish To My workspace](https://github.com/wralex/PowerAppsEd/raw/76bd817ead5019d5cc72764e339ce198beb23316/PowerBI/Resources/PowerBI_Publish.png)
 
 	![Open 'AdventureWorksDW2020.pbix' in Power BI](https://github.com/wralex/PowerAppsEd/raw/76bd817ead5019d5cc72764e339ce198beb23316/PowerBI/Resources/PowerBI_PublishToMyWorkspace.png)
 
-10. Click on the link after you publish the report to confirm that the report has been placed out to your online **My workspace**
+7. Click on the link after you publish the report to confirm that the report has been placed out to your online **My workspace**
 
 	![Open 'AdventureWorksDW2020.pbix' in Power BI](https://github.com/wralex/PowerAppsEd/raw/76bd817ead5019d5cc72764e339ce198beb23316/PowerBI/Resources/PowerBI_ClickLinkToMyWorkspace.png)
 
-11. After confimation that the report (*along with it's associated Dataset*) have been confirmed online then close Power BI Desktop (*you can also close the browser window if no longer needed*) and proceed with the next tasks
+8. After confimation that the report (*along with it's associated Dataset*) have been confirmed online then close Power BI Desktop (*you can also close the browser window if no longer needed*) and proceed with the next tasks
 
 ### **Task 2: Create the report**
 In this task you will open Power BI Report Builder to create and then save a report.
@@ -209,41 +209,41 @@ In this task you will create a data source and dataset to retrieve a query resul
 
 	[SalesOrder.dax](https://github.com/wralex/PowerAppsEd/raw/76bd817ead5019d5cc72764e339ce198beb23316/PowerBI/Resources/SalesOrder.dax)
 
-10. To create a dataset, in the **Report Data** pane, right-click the **AdventureWorksDW2020** data source, and then select **Add Dataset**.
+11. To create a dataset, in the **Report Data** pane, right-click the **AdventureWorksDW2020** data source, and then select **Add Dataset**.
 
 	![C:\Users\PETERM~1\AppData\Local\Temp\SNAGHTML336e389c.PNG](https://raw.githubusercontent.com/MicrosoftLearning/DA-100-Analyzing-Data-with-Power-BI/master/Instructions/Labs/Linked_image_Files/11-create-power-bi-paginated-report_image18.png)
 
 	*A report dataset is a different in purpose and structure from a Power BI dataset.*
 
-11. Click on the **Parameters** view on the left and click the **Add** button to add a parameter to use in the query.
+12. Click on the **Parameters** view on the left and click the **Add** button to add a parameter to use in the query.
 
 	![Add Param to Dataset](https://github.com/wralex/PowerAppsEd/raw/76bd817ead5019d5cc72764e339ce198beb23316/PowerBI/Resources/PBI%20Add%20Param%20to%20Dataset.png)
 
-12. In the **Parameter** Name field enter **`SalesOrderNumber`** and in the Parameter Value drop-down select the `[@SalesOrderNumber]` that was created above
+13. In the **Parameter** Name field enter **`SalesOrderNumber`** and in the Parameter Value drop-down select the `[@SalesOrderNumber]` that was created above
 
-13. Click on the **Query** view on the left to see the **Data Properties**.
+14. Click on the **Query** view on the left to see the **Data Properties**.
 
-14. In the **Dataset Properties** window, in the **Name** box, replace the text with **`SalesOrder`**.
+15. In the **Dataset Properties** window, in the **Name** box, replace the text with **`SalesOrder`**.
 
-15. To import a pre-defined query, click **Import**.
+16. To import a pre-defined query, click **Import**.
 
 	![Picture 40](https://raw.githubusercontent.com/MicrosoftLearning/DA-100-Analyzing-Data-with-Power-BI/master/Instructions/Labs/Linked_image_Files/11-create-power-bi-paginated-report_image19.png)
 
-16. In the **Import Query** window, change the type of file from **Sql Files (\*.sql)** to **All files (\*.\*)** and then to navigate to the directory you downloaded and placed the **SalesOrder.dax** file and select it.
+17. In the **Import Query** window, change the type of file from **Sql Files (\*.sql)** to **All files (\*.\*)** and then to navigate to the directory you downloaded and placed the **SalesOrder.dax** file and select it.
 
-17. Click **Open**.
+18. Click **Open**.
 
-18. In the **Query** box, review the query, and be sure to scroll down to the bottom of the query text.
+19. In the **Query** box, review the query, and be sure to scroll down to the bottom of the query text.
 
 	*It is not important that you understand the details of the query statement. It has been designed to retrieve sales order line details. The `VAR __DS0FilterTable = TREATAS({@SalesOrderNumber}, 'FactResellerSales'[SalesOrderNumber])` clause includes a predicate to restrict the query result to a single sales order. The ORDER BY clause ensures the rows are returned by line number order.*
 
-19. Notice the use of **@SalesOrderNumber** paramter in the `VAR __DS0FilterTable` clause, which represents a query parameter.
+20. Notice the use of **@SalesOrderNumber** paramter in the `VAR __DS0FilterTable` clause, which represents a query parameter.
 
 	![Picture 3](https://github.com/wralex/PowerAppsEd/raw/76bd817ead5019d5cc72764e339ce198beb23316/PowerBI/Resources/PBI%20SalesOrder%20Param.png)
 
 	*A query parameter is a placeholder for a value that will be passed in at query execution time. You will configure a report parameter to prompt the report user for a single sales order number which will then be passed to the query parameter.*
 
-20. Click on the **Fields** view on the left and change each field to a simple name as follows:
+21. Click on the **Fields** view on the left and change each field to a simple name as follows:
 
 	| **Field Name** | **Field Source**                            |
 	|------------|-----------------------------------------|
@@ -256,9 +256,9 @@ In this task you will create a data source and dataset to retrieve a query resul
 	| **`UnitPrice`**  | FactResellerSales[UnitPrice]            |
 	| **`Amount`**     | [Amount]                                |
 
-21. Click **OK**.
+22. Click **OK**.
 
-22. In the **Report Data** pane, notice the addition of the **SalesOrder** dataset and its fields.
+23. In the **Report Data** pane, notice the addition of the **SalesOrder** dataset and its fields.
 
 	![Picture 44](https://raw.githubusercontent.com/MicrosoftLearning/DA-100-Analyzing-Data-with-Power-BI/master/Instructions/Labs/Linked_image_Files/11-create-power-bi-paginated-report_image21.png)
 	
@@ -287,6 +287,7 @@ In this task you will configure the report parameter with a default value.
 5. In the **Value** dropdown list, replace the text with **SO43665**.
 
 	![Picture 50](https://github.com/wralex/PowerAppsEd/raw/76bd817ead5019d5cc72764e339ce198beb23316/PowerBI/Resources/PBI%20Default%20Param%20Value.png)
+	
 	*Sales order SO43665 is the value you will initially use to test the report design.*
 
 6. Click **OK**.
