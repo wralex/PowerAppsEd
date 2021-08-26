@@ -1,0 +1,22 @@
+DEFINE
+
+  VAR __DS0FilterTable = 
+    TREATAS({@SalesOrderNumber}, 'FactResellerSales'[SalesOrderNumber])
+
+  VAR __DS0Core = 
+    SUMMARIZECOLUMNS(
+      'FactResellerSales'[OrderDate],
+      'DimReseller'[ResellerAlternateKey],
+      'DimReseller'[ResellerName],
+      'FactResellerSales'[SalesOrderLineNumber],
+      'DimProduct'[EnglishProductName],
+      'FactResellerSales'[OrderQuantity],
+      'FactResellerSales'[UnitPrice],
+      __DS0FilterTable,
+      "Amount", CALCULATE(SUM(FactResellerSales[OrderQuantity])*SUM(FactResellerSales[UnitPrice]))
+    )
+
+EVALUATE
+  __DS0Core
+ORDER BY
+  'FactResellerSales'[SalesOrderLineNumber]
