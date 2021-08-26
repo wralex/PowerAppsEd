@@ -2,7 +2,7 @@ In this lab you will use Power BI Report Builder to develop a pixel-perfect pagi
 
 The final report will look like the following:
 
-![Image of the completed Sales Order Report. It includes a title, subtitle details, the company logo, and a table of sales order lines.](/Resources/PBI%20Pagenated%20Report%20Final.png)
+![Image of the completed Sales Order Report. It includes a title, subtitle details, the company logo, and a table of sales order lines.](https://github.com/wralex/PowerAppsEd/raw/76bd817ead5019d5cc72764e339ce198beb23316/PowerBI/Resources/PBI%20Pagenated%20Report%20Final.png)
 
 In this lab you learn how to:
 - Use Power BI Report Builder
