@@ -32,12 +32,6 @@ In this task you will need to download Power BI Desktop and Report Builder appli
 
 3. Open each application and sign in using your organization's tenant login (*i.e., jsmith@cma.com*).
 
-4. Create a folder on your local hard drive (**C:**) and name it **DA100** so that you will have a **C:\DA100** folder to place the files required to support the rest of the labs. If you modify the path to another location please make sure to use the alternate path in any steps below that refer to the **C:\DA100** Directory.
-
-5. Download all the folders with content into the **C:\DA100** directory of your workstation
-
-    [DA100](https://cma365.sharepoint.com/teams/DynamicsSolutions/Shared%20Documents/Power%20BI/DA100)
-
 6. Download a local copy of the Power BI PBIX file from the following URL
 
     [AdventureWorksDW2020.pbix](https://github.com/wralex/PowerAppsEd/raw/76bd817ead5019d5cc72764e339ce198beb23316/PowerBI/Resources/AdventureWorksDW2020.pbix)
