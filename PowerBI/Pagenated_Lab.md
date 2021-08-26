@@ -1,3 +1,5 @@
+# Power BI Report Builder - Paginated Report Lab
+
 In this lab you will use Power BI Report Builder to develop a pixel-perfect paginated report layout. You will create a data source and dataset, and also configure a report parameter. The report layout will allow data to be rendered over multiple pages, and to be exported in PDF and other formats.
 
 The final report will look like the following:
