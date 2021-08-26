@@ -123,7 +123,7 @@ In this task you will configure the report header.
 
 	![Picture 35](https://raw.githubusercontent.com/MicrosoftLearning/DA-100-Analyzing-Data-with-Power-BI/master/Instructions/Labs/Linked_image_Files/11-create-power-bi-paginated-report_image10.png)
 	
-12. Download the following linked image file for the next steps (***Note where you place the downloaded image***):
+12. **Right**-click on the link below and select the **Save link as** option and place the image into a local directory on your workstation. ***Note where you place the downloaded image for upcoming steps!!***:
 
 	[Adventure Works Image](https://github.com/wralex/PowerAppsEd/raw/main/PowerBI/Resources/AdventureWorksLogo.jpg)
 
