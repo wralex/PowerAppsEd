@@ -206,7 +206,7 @@ In this task you will create a data source and dataset to retrieve a query resul
 
 10. Download the DAX file linked below to be used for the next steps. **Make note of where you place this file on your workstation**
 
-	[SalesOrder.dax](https://github.com/wralex/PowerAppsEd/raw/76bd817ead5019d5cc72764e339ce198beb23316/PowerBI/Resources/SalesOrder.dax
+	[SalesOrder.dax](https://github.com/wralex/PowerAppsEd/raw/76bd817ead5019d5cc72764e339ce198beb23316/PowerBI/Resources/SalesOrder.dax)
 
 10. To create a dataset, in the **Report Data** pane, right-click the **AdventureWorksDW2020** data source, and then select **Add Dataset**.
 
