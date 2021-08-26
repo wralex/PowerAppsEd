@@ -165,6 +165,7 @@ In this task you will configure the report header.
 	*Tip: You can also click the disk icon located at the top-left.*
 
 	![Picture 106](https://raw.githubusercontent.com/MicrosoftLearning/DA-100-Analyzing-Data-with-Power-BI/master/Instructions/Labs/Linked_image_Files/11-create-power-bi-paginated-report_image14.png)
+	
 	*You are now ready to configure the report to retrieve a database query result.*
 
 ### **Task 2: Retrieve data**
@@ -198,16 +199,19 @@ In this task you will create a data source and dataset to retrieve a query resul
 
 8. Enter the following on the **General** Page of the new parameter:
 
-    **Name:** `SalesOrderNumber`
-
-    **Prompt:** `Sales Order Number`
-
+	- **Name:** `SalesOrderNumber`
+	- **Prompt:** `Sales Order Number`
 
 9. Click the **OK** button.
+
+10. Download the DAX file linked below to be used for the next steps. **Make note of where you place this file on your workstation**
+
+	[SalesOrder.dax](https://github.com/wralex/PowerAppsEd/raw/76bd817ead5019d5cc72764e339ce198beb23316/PowerBI/Resources/SalesOrder.dax
 
 10. To create a dataset, in the **Report Data** pane, right-click the **AdventureWorksDW2020** data source, and then select **Add Dataset**.
 
 	![C:\Users\PETERM~1\AppData\Local\Temp\SNAGHTML336e389c.PNG](https://raw.githubusercontent.com/MicrosoftLearning/DA-100-Analyzing-Data-with-Power-BI/master/Instructions/Labs/Linked_image_Files/11-create-power-bi-paginated-report_image18.png)
+
 	*A report dataset is a different in purpose and structure from a Power BI dataset.*
 
 11. Click on the **Parameters** view on the left and click the **Add** button to add a parameter to use in the query.
@@ -224,7 +228,7 @@ In this task you will create a data source and dataset to retrieve a query resul
 
 	![Picture 40](https://raw.githubusercontent.com/MicrosoftLearning/DA-100-Analyzing-Data-with-Power-BI/master/Instructions/Labs/Linked_image_Files/11-create-power-bi-paginated-report_image19.png)
 
-16. In the **Import Query** window, change the type of file from **Sql Files (\*.sql)** to **All files (\*.\*)** and then to navigate to the **C:\DA100\Labs\10-create-power-bi-paginated-report\Assets** folder, and then select the **SalesOrder.dax** file.
+16. In the **Import Query** window, change the type of file from **Sql Files (\*.sql)** to **All files (\*.\*)** and then to navigate to the directory you downloaded and placed the **SalesOrder.dax** file and select it.
 
 17. Click **Open**.
 
@@ -235,6 +239,7 @@ In this task you will create a data source and dataset to retrieve a query resul
 19. Notice the use of **@SalesOrderNumber** paramter in the `VAR __DS0FilterTable` clause, which represents a query parameter.
 
 	![Picture 3](https://github.com/wralex/PowerAppsEd/raw/76bd817ead5019d5cc72764e339ce198beb23316/PowerBI/Resources/PBI%20SalesOrder%20Param.png)
+
 	*A query parameter is a placeholder for a value that will be passed in at query execution time. You will configure a report parameter to prompt the report user for a single sales order number which will then be passed to the query parameter.*
 
 20. Click on the **Fields** view on the left and change each field to a simple name as follows:
@@ -253,6 +258,7 @@ In this task you will create a data source and dataset to retrieve a query resul
 22. In the **Report Data** pane, notice the addition of the **SalesOrder** dataset and its fields.
 
 	![Picture 44](https://raw.githubusercontent.com/MicrosoftLearning/DA-100-Analyzing-Data-with-Power-BI/master/Instructions/Labs/Linked_image_Files/11-create-power-bi-paginated-report_image21.png)
+	
 	*Fields are used to configure data regions in the report layout. They were derived from the dataset query columns.*
 
 23. Save the report.
@@ -472,15 +478,10 @@ In this task you will add a table data region to the report body.
 	*In the next task you will:*
 
 	- Format the table header by using a background color and bold font style
-
 	- Modify column widths to remove redundant space and to prevent long text values from wrapping
-
 	- Left-justify the first column values
-
 	- Right-justify the last three column values
-
 	- Format currency values using a currency symbol (for USD)
-
 	- Add and format a total row for the table
 
 ### **Task 6: Format the table data region**
@@ -504,9 +505,7 @@ In this task you will format the table data region.
 4. In the **Properties** pane (or the ribbon), configure the following properties:
 
 	- **Fill | BackgroundColor** : DarkGreen (tip: hover the cursor over each color to reveal its name)
-
 	- **Font | Color** : White
-
 	- **Font | Font | FontWeight** : Bold
 
 5. Select the first column guide.
