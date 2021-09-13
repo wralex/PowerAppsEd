@@ -3,4 +3,6 @@ This is an education repository that I will use to communicate some of the use o
 
 ## Power BI
 
-- [Pagenated Report Lab](https://github.com/wralex/PowerAppsEd/blob/main/PowerBI/Paginated_Lab.md)
+### Power BI Report Builder
+
+- [Paginated Report Lab](https://github.com/wralex/PowerAppsEd/blob/main/PowerBI/Paginated_Lab.md)
