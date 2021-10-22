@@ -190,7 +190,7 @@ In this task you will create a data source and dataset to retrieve a query resul
 3. In the **Report Data** pane (located at the left), right-click the **Data Sources** folder, and then select **Add Power BI Dataset Connection...**.
 
     ![C:\Users\PETERM~1\AppData\Local\Temp\SNAGHTML3367f3d0.PNG](Resources/Add%20Power%20BI%20Dataset%20Connection....png)
- 
+
     *It is possible to retrieve data from cloud or on-premises databases, or a Power BI dataset.*
 
 4. On the "Select a dataset from the Power BI Service" make sure you have selected **My Workspace** on the left panel and **AdventureWorksDW2020** Dataset on the right panel and keep the Dataset name as  `AdventureWorksDW2020` and click the **Select** button on the bottom.
